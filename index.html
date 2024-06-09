@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <style>
+        @keyframes logoAnimation {
+            0% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(180deg); }
+            100% { transform: scale(1) rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">GoTour</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index_ru.html">Russian</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>    
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>Welcome to GoTour</h1>
+                        <p>Discover amazing destinations, plan your next adventure, and make memories that last a lifetime.</p>
+                        <a id="exploreBtn" href="destinations.html" class="btn btn-primary">Explore Destinations</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img id="logo" src="images/logo.png" class="d-block w-100" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-plane"></i> Flight Booking</h5>
+                                <p class="card-text">Get the best deals on flights to your favorite destinations. We offer competitive prices and a seamless booking experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-hotel"></i> Hotel Reservations</h5>
+                                <p class="card-text">Find and book the perfect hotel for your stay. Choose from a wide range of accommodations to suit your needs and budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-map-signs"></i> Guided Tours</h5>
+                                <p class="card-text">Explore new places with our expert guides. Our tours are designed to give you an in-depth understanding of the local culture and attractions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"GoTour made my vacation planning so easy and stress-free. I had the best time of my life!"</p>
+                            <footer class="blockquote-footer">Sarah Johnson, <cite title="Source Title">Traveler</cite></footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-6">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Amazing service and fantastic destinations. I highly recommend GoTour for your travel needs."</p>
+                            <footer class="blockquote-footer">John Doe, <cite title="Source Title">Adventurer</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ailana Baimurzina - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('logo').addEventListener('click', function() {
+            this.style.animation = 'logoAnimation 1s ease';
+            setTimeout(() => {
+                this.style.animation = ''; 
+            }, 1000);
+        });
+        document.getElementById('exploreBtn').addEventListener('click', function() {
+            alert('Redirecting...'); 
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - GoTour</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <style>
+        .card-img-top {
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">GoTour</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations_ru.html">Russian</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destinations-section">
+            <div class="container">
+                <h2>Popular Destinations</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" id="paris-card">
+                            <img src="images/paris.jpg" class="card-img-top" alt="Paris">
+                            <div class="card-body">
+                                <h5 class="card-title">Paris, France</h5>
+                                <p class="card-text">Experience the romance of Paris with its iconic landmarks and
+                                    charming streets.</p>
+                                <a href="paris.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" id="kyoto-card">
+                            <img src="images/kyoto.jpg" class="card-img-top" alt="Kyoto">
+                            <div class="card-body">
+                                <h5 class="card-title">Kyoto, Japan</h5>
+                                <p class="card-text">Immerse yourself in Kyoto's rich culture, ancient temples, and
+                                    serene gardens.</p>
+                                <a href="kyoto.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" id="newyork-card">
+                            <img src="images/newyork.jpg" class="card-img-top" alt="New York">
+                            <div class="card-body">
+                                <h5 class="card-title">New York City, USA</h5>
+                                <p class="card-text">Explore the vibrant streets, world-class museums, and diverse
+                                    neighborhoods of NYC.</p>
+                                <a href="newyork.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ailana Baimurzina - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.card-img-top').forEach(function (img) {
+            img.addEventListener('mouseover', function () {
+                this.style.transform = 'scale(1.1)';
+            });
+
+            img.addEventListener('mouseout', function () {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

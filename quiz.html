@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - GoTour</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">GoTour</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz-section">
+            <div class="container">
+                <h2>Test Your Knowledge</h2>
+                <p>Take our quiz and discover how much you know about the world's most famous landmarks, cultures, and
+                    cuisines!</p>
+                <div class="quiz">
+                    <div class="question">Question 1: What is the capital of France?</div>
+                    <div class="choices">
+                        <button onclick="checkAnswer('Paris')">Paris</button>
+                        <button onclick="checkAnswer('Berlin')">Berlin</button>
+                        <button onclick="checkAnswer('Rome')">Rome</button>
+                        <button onclick="checkAnswer('London')">London</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="quiz">
+                    <div class="question">Question 2: What is the tallest mountain in the world?</div>
+                    <div class="choices">
+                        <button onclick="checkAnswer('Lhotse')">Lhotse</button>
+                        <button onclick="checkAnswer('Mount Everest')">Mount Everest</button>
+                        <button onclick="checkAnswer('K2')">K2</button>
+                        <button onclick="checkAnswer('Kangchenjunga')">Kangchenjunga</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="quiz">
+                    <div class="question">Question 3: What country is known as the Land of the Rising Sun?</div>
+                    <div class="choices">
+                        <button onclick="checkAnswer('Japan')">Japan</button>
+                        <button onclick="checkAnswer('Korea')">Korea</button>
+                        <button onclick="checkAnswer('India')">India</button>
+                        <button onclick="checkAnswer('China')">China</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="quiz">
+                    <div class="question">Question 4: What is the official language of Brazil?</div>
+                    <div class="choices">
+                        <button onclick="checkAnswer('French')">French</button>
+                        <button onclick="checkAnswer('Spanish')">Spanish</button>
+                        <button onclick="checkAnswer('English')">English</button>
+                        <button onclick="checkAnswer('Portuguese')">Portuguese</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+                <div class="quiz">
+                    <div class="question">Question 5: Where is the Great Barrier Reef located?</div>
+                    <div class="choices">
+                        <button onclick="checkAnswer('Philippines')">Philippines</button>
+                        <button onclick="checkAnswer('Australia')">Australia</button>
+                        <button onclick="checkAnswer('Maldives')">Maldives</button>
+                        <button onclick="checkAnswer('Hawaii')">Hawaii</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ailana Baimurzina - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

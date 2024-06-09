@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристический сайт</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    <style>
+        @keyframes logoAnimation {
+            0% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(180deg); }
+            100% { transform: scale(1) rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index_ru.html">GoTour</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index_ru.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_ru.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations_ru.html">Места</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Викторина</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">English</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>Добро пожаловать в GoTour</h1>
+                        <p>Откройте для себя удивительные направления, спланируйте свое следующее приключение и оставьте незабываемые воспоминания.</p>
+                        <a id="exploreBtn" href="destinations.html" class="btn btn-primary">Исследовать направления</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img id="logo" src="images/logo.png" class="d-block w-100" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-plane"></i> Бронирование авиабилетов</h5>
+                                <p class="card-text">Получите лучшие предложения по авиабилетам в ваши любимые направления. Мы предлагаем конкурентные цены и безупречный опыт бронирования.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-hotel"></i> Бронирование отелей</h5>
+                                <p class="card-text">Найдите и забронируйте идеальный отель для вашего пребывания. Выбирайте из широкого выбора вариантов размещения, соответствующих вашим потребностям и бюджету.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-map-signs"></i> Экскурсии с гидом</h5>
+                                <p class="card-text">Исследуйте новые места вместе с нашими опытными гидами. Наши экскурсии разработаны для того, чтобы предоставить вам глубокое понимание местной культуры и достопримечательностей.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>Что говорят наши клиенты</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"GoTour сделал планирование моего отпуска настолько легким и без стресса. Я провел лучшее время в своей жизни!"</p>
+                            <footer class="blockquote-footer">Сара Джонсон, <cite title="Источник">Путешественник</cite></footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-6">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Отличный сервис и фантастические направления. Я очень рекомендую GoTour для ваших путешествий."</p>
+                            <footer class="blockquote-footer">Джон Доу, <cite title="Источник">Приключенец</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Айлана Баймурзина - Все права защищены</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('logo').addEventListener('click', function() {
+            this.style.animation = 'logoAnimation 1s ease';
+            setTimeout(() => {
+                this.style.animation = ''; 
+            }, 1000);
+        });
+        document.getElementById('exploreBtn').addEventListener('click', function() {
+            alert('Перенаправляем...');
+        });
+    </script>
+</body>
+</html>
