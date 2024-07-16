@@ -17,4 +17,4 @@ This is a tourism-themed website built as a final project for the front-end web 
 - Event listeners and animations
 
 ## Author
-Created by Baimurzina Ailana
+Created by Bogdan Drabchuk
